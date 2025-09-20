@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Live Weather + Forecast</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Chart.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <main class="card">
+    <header class="header">
+      <h1>Weather Now</h1>
+      <div class="controls">
+        <input id="cityInput" type="text" placeholder="Enter city (e.g. Toronto)" />
+        <button id="fetchBtn">Get Weather</button>
+      </div>
+    </header>
+
+    <section class="current" id="current">
+      <!-- Populated by JS -->
+      <div class="loading">Enter a city & hit Get Weather</div>
+    </section>
+
+    <section class="chart">
+      <canvas id="tempChart" height="120"></canvas>
+    </section>
+
+    <footer class="footer">
+      <small>Data: OpenWeatherMap • Example only — don't expose API keys in production</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

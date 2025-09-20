@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Femi-Ladiran Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- TensorFlow.js for ML demo -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Femi-Ladiran Rereloluwa Afolarin</h1>
+      <p>Software Engineer • AI & ML • Frontend • Problem Solver</p>
+      <nav class="socials">
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fas fa-code"></i></a> <!-- Codewars -->
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>CSS</li>
+        <li>HTML5</li>
+        <li>APIs</li>
+        <li>Machine Learning</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <a class="project-card" href="weather/index.html" target="_blank">
+          <h3>Weather Dashboard</h3>
+          <p>Fetches live weather data from an API and visualizes it.</p>
+        </a>
+        <a class="project-card" href="Movie/index.html" target="_blank">
+          <h3>Movie Finder</h3>
+          <p>Search movies using a public API and display trailers.</p>
+        </a>
+        <a class="project-card" href="Image/index.html" target="_blank">
+          <h3>ML Image Classifier</h3>
+          <p>Classifies simple images in the browser with TensorFlow.js.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="demos">
+      <h2>Interactive Demo</h2>
+      <div class="demo-box">
+        <button onclick="fetchDemoApi()">Fetch Random Joke</button>
+        <p id="apiResult"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Femi-Ladiran Rereloluwa Afolarin</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

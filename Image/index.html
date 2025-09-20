@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Image Classifier</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <!-- Pretrained MobileNet -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+</head>
+<body>
+  <main class="card">
+    <header class="header">
+      <h1>🖼️ Image Classifier</h1>
+    </header>
+
+    <section class="uploader" id="uploader">
+      <input type="file" id="fileInput" accept="image/*"/>
+      <p>or drag & drop an image here</p>
+    </section>
+
+    <section id="preview" class="preview hidden">
+      <img id="img" alt="preview"/>
+    </section>
+
+    <section id="results" class="results hidden">
+      <h2>Predictions</h2>
+      <ul id="predList"></ul>
+    </section>
+
+    <footer class="footer">
+      <small>Powered by TensorFlow.js & MobileNet</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

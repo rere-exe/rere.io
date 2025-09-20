@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+/* Header */
+header {
+  background: #111;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.socials {
+  margin-top: 1rem;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.4rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.socials a:hover {
+  color: #4f46e5;
+  transform: scale(1.2);
+}
+
+/* Sections */
+section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #4f46e5;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list li {
+  background: #eee;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: default;
+  list-style: none
+}
+
+.skills-list li:hover {
+  background: #4f46e5;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-card {
+  display: block;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Demos */
+.demo-box {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.demo-box button {
+  padding: 10px 20px;
+  border: none;
+  background: #4f46e5;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.demo-box button:hover {
+  background: #4338ca;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #111;
+  color: #aaa;
+  margin-top: 2rem;
+}
